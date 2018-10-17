@@ -39,14 +39,14 @@ class Module implements PdfInterface, ResolverInterface
     protected $appendImage = array();
     
     
-     /**
-     * Loads module specific configuration.
-     *
-     * @return array
-     */
+    /**
+    * Loads module specific configuration.
+    *
+    * @return array
+    */
     public function getConfig()
     {
-        return ModuleConfigLoader::load(__DIR__ . '/config');
+        return ModuleConfigLoader::load(__DIR__ . '/../config');
     }
     
     public static function factory(ServiceManager $serviceManager)
